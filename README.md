@@ -11,9 +11,10 @@
 
 [![최신 버전](https://img.shields.io/github/v/release/sangukjeon/pelova-releases?include_prereleases&label=%EC%B5%9C%EC%8B%A0%20%EB%B2%84%EC%A0%84&color=2B6BF3)](https://github.com/sangukjeon/pelova-releases/releases/latest)
 ![Windows 10·11](https://img.shields.io/badge/Windows-10%C2%B711%20(64%EB%B9%84%ED%8A%B8)-0078D4)
+![macOS 11+](https://img.shields.io/badge/macOS-11%2B%20(Apple%20Silicon%C2%B7Intel)-555555)
 ![무료 미리보기](https://img.shields.io/badge/%EB%AC%B4%EB%A3%8C-%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0-22A06B)
 
-**[⬇ Windows용 내려받기](https://github.com/sangukjeon/pelova-releases/releases/latest)** &nbsp;·&nbsp;
+**[⬇ 내려받기 (Windows · 맥)](https://github.com/sangukjeon/pelova-releases/releases/latest)** &nbsp;·&nbsp;
 **[🌐 공식 사이트](https://www.pelova.kr)** &nbsp;·&nbsp;
 **[📝 버전 기록](CHANGELOG.md)**
 
@@ -74,7 +75,9 @@ AI에게 "알아서 만들어 줘"라고 맡기면, 내가 원한 것과 다른 
 
 ## ⬇ 내려받기
 
-👉 **[최신 버전 내려받기](https://github.com/sangukjeon/pelova-releases/releases/latest)** — `PELOVA_<버전>_x64-setup.exe`를 받아 실행하세요.
+👉 **[최신 버전 내려받기](https://github.com/sangukjeon/pelova-releases/releases/latest)**
+
+### Windows 10·11 (64비트)
 
 | 파일 | 용도 |
 |---|---|
@@ -82,8 +85,23 @@ AI에게 "알아서 만들어 줘"라고 맡기면, 내가 원한 것과 다른 
 | `PELOVA_<버전>_x64_ko-KR.msi` | 회사·학교 PC 일괄 설치용 |
 
 > [!NOTE]
-> 코드 서명 인증서가 아직 없어서 처음 설치할 때 **"Windows의 PC 보호"** 창이 뜰 수 있어요. **추가 정보 → 실행**을 누르면 설치돼요.<br />
-> 설치 파일은 이 저장소의 배포판(Releases)에서만 받아 주세요.
+> 코드 서명 인증서가 아직 없어서 처음 설치할 때 **"Windows의 PC 보호"** 창이 뜰 수 있어요. **추가 정보 → 실행**을 누르면 설치돼요.
+
+### macOS 11 이상 (Apple Silicon · Intel)
+
+| 파일 | 용도 |
+|---|---|
+| `PELOVA_<버전>_universal.dmg` | 맥 설치 파일. 열어서 **PELOVA**를 **응용 프로그램** 폴더로 끌어 놓아요 |
+
+> [!NOTE]
+> 애플 개발자 서명이 아직 없어서 처음 열 때 **"확인되지 않은 개발자"** 경고가 떠요.
+> 1. 경고 창을 닫고 **시스템 설정 → 개인정보 보호 및 보안**으로 가요.
+> 2. 아래쪽의 **"그래도 열기"** 를 누르고 암호로 확인해요. (처음 한 번만)
+>
+> "손상되었기 때문에 열 수 없습니다"라고 뜨면, 응용 프로그램 폴더로 옮긴 뒤 터미널에서 `xattr -dr com.apple.quarantine /Applications/PELOVA.app`를 실행하고 다시 열어요.<br />
+> 자동 업데이트가 되려면 앱이 **응용 프로그램 폴더**에 있어야 해요.
+
+설치 파일은 이 저장소의 배포판(Releases)에서만 받아 주세요.
 
 ## 🤖 AI 연결
 
